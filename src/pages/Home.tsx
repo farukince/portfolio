@@ -1,40 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import heroPhoto from "../photo/2025-10-25 21.14.57.jpg";
 
 export default function Home() {
-  const defaultImage =
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuDtgeH8BwmZz2xotokzBB3LIBfD6mhMf4fIAH9PFkGE336x2B-pyNMAYjquvMQzP_LSpGRBArlgFIR4b4MKo9PyXuDx-PJxi2giGJCe08-DxHm5owgFwYP8iimvnEKSKWFIh1qQqHZ62qmEsvp7iF60x5U8X9JVGhktHUHC7JB_rhD-CtaT1Pw96t_9oI1oxW2m5_7dXSmRTLoil3PGc7y8SXLc6w_k0ZpIlVg27ktHC_GulL2tv2zfrfMBgjGgezcW27S_wul6MYr6";
-  const [imageSrc, setImageSrc] = useState<string>(defaultImage);
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    const saved = localStorage.getItem("homeHeroImage");
-    if (saved) {
-      setImageSrc(saved);
-    }
-  }, []);
-
-  const onPickImage = () => {
-    inputRef.current?.click();
-  };
-
-  const onFileChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      const dataUrl = String(reader.result);
-      setImageSrc(dataUrl);
-      try {
-        localStorage.setItem("homeHeroImage", dataUrl);
-      } catch {
-        /* ignore quota errors */
-      }
-    };
-    reader.readAsDataURL(file);
-    // reset input so the same file can be re-selected if needed
-    e.target.value = "";
-  };
-
+  const imageSrc = heroPhoto;
   return (
     <section className="relative w-full py-12 md:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -86,21 +53,6 @@ export default function Home() {
                 alt="Faruk İnce portre"
                 src={imageSrc}
               />
-              <input
-                ref={inputRef}
-                type="file"
-                accept="image/*"
-                className="hidden"
-                onChange={onFileChange}
-              />
-              <button
-                type="button"
-                onClick={onPickImage}
-                className="absolute top-4 right-4 z-20 inline-flex items-center gap-2 rounded-lg border border-white/40 dark:border-gray-700/60 bg-white/80 dark:bg-[#1e2430]/80 px-3 py-1.5 text-xs font-semibold text-gray-700 dark:text-gray-200 backdrop-blur-sm shadow-sm hover:bg-white/90 dark:hover:bg-[#1e2430]/90 transition-colors"
-              >
-                <span className="material-symbols-outlined !text-[16px]">photo_camera</span>
-                Fotoğrafı Değiştir
-              </button>
               <div className="absolute bottom-6 left-6 z-20 flex items-center gap-3 rounded-xl bg-white/90 dark:bg-[#1e2430]/90 backdrop-blur-sm p-4 shadow-lg border border-white/20 dark:border-gray-700/50">
                 <div className="rounded-full bg-primary/20 p-2 text-primary">
                   <span className="material-symbols-outlined text-sm">data_object</span>
