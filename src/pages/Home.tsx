@@ -1,4 +1,5 @@
 import heroPhoto from "../photo/2025-10-25 21.14.57.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const imageSrc = heroPhoto;
@@ -16,12 +17,12 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4 pt-2">
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-600 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
                 View Projects
-              </a>
+              </Link>
               <a
                 href="mailto:farukiince@gmail.com"
                 className="inline-flex h-12 items-center justify-center rounded-lg border border-gray-200 dark:border-gray-700 bg-transparent px-8 text-base font-bold text-gray-900 dark:text-white transition-all hover:bg-gray-100 dark:hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
