@@ -56,7 +56,7 @@ const experiences: ExperienceItem[] = [
     achievements: [
       "Active participation in community activities focused on statistics and software."
     ],
-    stack: ["İstatistik", "Topluluk"]
+    stack: ["Statistics", "Community"]
   }
 ];
 
@@ -67,11 +67,11 @@ export default function Experience() {
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2 text-primary font-semibold text-sm uppercase tracking-wider">
             <span className="w-8 h-[2px] bg-primary"></span>
-            Kariyer Yolculuğu
+            Career Journey
           </div>
-          <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight">İş Deneyimi</h1>
+          <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight">Experience</h1>
           <p className="text-gray-500 dark:text-[#9da6b9] text-lg leading-relaxed max-w-2xl">
-            Yazılım mühendisliği kariyerimde ölçeklenebilirlik, performans ve ürün geliştirme odaklı katkılarımı öne çıkaran kısa bir özet.
+            A summary of my software engineering journey with a focus on scalability, performance, and product delivery.
           </p>
         </div>
 
@@ -119,13 +119,13 @@ export default function Experience() {
         </div>
 
         <div className="mt-2 flex justify-center">
-          <a
-            href="/projects"
-            className="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[#282e39] hover:bg-[#323945] text-white text-base font-bold transition-all hover:scale-105"
-          >
-            Tüm Projeleri Gör
-            <span className="material-symbols-outlined ml-2">arrow_forward</span>
-          </a>
+            <a
+              href="/projects"
+              className="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[#282e39] hover:bg-[#323945] text-white text-base font-bold transition-all hover:scale-105"
+            >
+              View All Projects
+              <span className="material-symbols-outlined ml-2">arrow_forward</span>
+            </a>
         </div>
       </div>
     </section>
