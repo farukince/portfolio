@@ -64,7 +64,7 @@ react-portfolio/
 - **Home (`/`)**: Hero section and footer strip from the original `index.html`.
 - **Projects (`/projects`)**: Avatar hero, search field, tags, and the six-card grid rendered from the `projects` array in `Projects.tsx`.
 - **Experience (`/experience`)**: Timeline entries rendered from the `experiences` array in `Experience.tsx`.
-- **Education & Skills (`/education-skills`)**: Two-column layout matching `education-skils.html`, combining static blocks and mapped arrays.
+- **Education & Skills (`/education-skills`)**: Two-column layout matching `education-skills.html`, combining static blocks and mapped arrays.
 
 The original markup is preserved where possible; helper adjustments include `class` → `className`, inline styles → objects, and centralized data arrays for projects, experiences, and skills.
 
