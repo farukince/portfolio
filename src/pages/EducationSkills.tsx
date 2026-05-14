@@ -1,4 +1,4 @@
-import resumePdf from "../../Faruk_Ince_Resume.pdf";
+import resumePdf from "../../Faruk_Ince_CV.pdf";
 
 export default function EducationSkills() {
   return (
@@ -186,5 +186,4 @@ export default function EducationSkills() {
     </main>
   );
 }
-
 

@@ -5,7 +5,7 @@ const require = createRequire(import.meta.url);
 const pdf = require("pdf-parse/lib/pdf-parse.js");
 
 const root = path.resolve(process.cwd());
-const pdfPath = path.join(root, "Faruk_Ince_Resume.pdf");
+const pdfPath = path.join(root, "Faruk_Ince_CV.pdf");
 const outDir = path.join(root, "src", "data");
 const outPath = path.join(outDir, "resume.json");
 
@@ -124,5 +124,4 @@ main().catch((e) => {
   console.error(e);
   process.exit(1);
 });
-
 

@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import resumePdf from "../../Faruk_Ince_Resume.pdf";
+import resumePdf from "../../Faruk_Ince_CV.pdf";
 
 export default function Navbar() {
   return (
@@ -34,5 +34,4 @@ export default function Navbar() {
     </header>
   );
 }
-
 
