@@ -2,7 +2,7 @@
 
 Personal portfolio website for sharing my work, experience, education, skills, and current CV.
 
-Live site: https://farukince.github.io/portfolio/
+Live site: https://farukince.dev/
 
 The Resume link opens the latest CV.
 
