@@ -54,15 +54,6 @@ export default function Home() {
                 alt="Faruk İnce portre"
                 src={imageSrc}
               />
-              <div className="absolute bottom-6 left-6 z-20 flex items-center gap-3 rounded-xl bg-white/90 dark:bg-[#1e2430]/90 backdrop-blur-sm p-4 shadow-lg border border-white/20 dark:border-gray-700/50">
-                <div className="rounded-full bg-primary/20 p-2 text-primary">
-                  <span className="material-symbols-outlined text-sm">data_object</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">Current Focus</span>
-                  <span className="text-sm font-bold text-gray-900 dark:text-white">Cloud Technologies</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -70,5 +61,4 @@ export default function Home() {
     </section>
   );
 }
-
 
