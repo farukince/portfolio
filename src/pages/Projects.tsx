@@ -63,7 +63,7 @@ const projects: Project[] = [
   {
     icon: "database",
     iconColor: "text-emerald-500",
-    title: "Data",
+    title: "ecommerce-data-platform",
     updated: "Data; Cloud Technologies",
     description:
       "E-commerce data platform project focused on collecting, processing, and organizing commerce data for analytics-ready workflows.",
@@ -198,4 +198,3 @@ export default function Projects() {
     </div>
   );
 }
-
