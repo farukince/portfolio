@@ -59,11 +59,21 @@ const projects: Project[] = [
       "Serverless climate/statistics API. AWS Lambda‑ready TypeScript codebase to process and serve climate data.",
     tags: ["Cloud Technologies", "Statistics", "TypeScript", "Serverless"],
     repo: "https://github.com/farukince/climate-stats-lambda"
+  },
+  {
+    icon: "database",
+    iconColor: "text-emerald-500",
+    title: "Data",
+    updated: "Data; Cloud Technologies",
+    description:
+      "E-commerce data platform project focused on collecting, processing, and organizing commerce data for analytics-ready workflows.",
+    tags: ["Data", "Cloud Technologies", "Analytics", "E-commerce"],
+    repo: "https://github.com/farukince/ecommerce-data-platform"
   }
 ];
 
 export default function Projects() {
-  const categories = ["All", "AI", "Web Development", "Statistics", "Cloud Technologies"];
+  const categories = ["All", "AI", "Web Development", "Data", "Statistics", "Cloud Technologies"];
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const filteredProjects = projects.filter((p) =>
     activeCategory === "All" ? true : p.tags.includes(activeCategory)
@@ -188,5 +198,4 @@ export default function Projects() {
     </div>
   );
 }
-
 
